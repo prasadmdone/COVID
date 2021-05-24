@@ -1,0 +1,27 @@
+intents:
+  - greet
+  - goodbye
+  - corona_state
+
+
+actions:
+  - action_corona_tracker
+  - action_hello_world
+
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you? Enter your state in India"
+    image: "https://indiabioscience.org/media/articles/If-Covid-positive.png"
+   # attachment: { "type":"video", "payload":{ "src": "https://youtube.com/embed/9C1Km6xfdMA" } }
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye Here is our link [website](http://www.bigdatamatica.com)
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
